@@ -3,6 +3,6 @@ Just another raw wp template.
 
 #Code by
 
-- Pietro Biffi -> [Personal site](http://sidbiffi.it/)
+[Pietro Biffi](http://sidbiffi.it/)
 
-- Paolo Locatelli -> [Personal site](http://locatellipaolo.it/)
+[Paolo Locatelli](http://locatellipaolo.it/)
