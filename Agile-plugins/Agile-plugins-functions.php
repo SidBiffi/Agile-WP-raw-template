@@ -12,7 +12,9 @@
 	// THUMBNAIL
 	require_once( dirname(__file__).'/thumbnails.php' );
 
-	// JS-IMAGE-UPLOADER
-	require_once( dirname(__file__).'/js-image-uploader.php' );	
+	// VISUAL COMPOSER
+	require_once( dirname(__file__).'/visual-composer.php' );	
 
+	// CUSTOM POST TYPE
+	require_once( dirname(__file__).'/cpt.php' );	
 ?>
