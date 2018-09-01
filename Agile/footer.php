@@ -7,7 +7,7 @@
 
 				<div class = "container">
 
-						<p class = "navbar-text pull-left">© 2004 - 2016 Basics Corporation</p>
+						<p class = "navbar-text pull-left">© <?php echo date("Y"); ?> Basics Corporation</p>
 
 				</div>
 
