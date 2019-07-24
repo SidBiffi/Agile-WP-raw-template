@@ -1,7 +1,7 @@
 <?php
 /*	
 	Plugin Name: Agile plugins
-	Description: Useful functons
+	Description: Useful functions
 	Author: Pietro Biffi Paolo Locatelli
 	Version: 0.1  
 */ 
@@ -11,9 +11,6 @@
 
 	// THUMBNAIL
 	require_once( dirname(__file__).'/thumbnails.php' );
-
-	// VISUAL COMPOSER
-	require_once( dirname(__file__).'/visual-composer.php' );	
 
 	// CUSTOM POST TYPE
 	require_once( dirname(__file__).'/cpt.php' );	
