@@ -1,20 +1,29 @@
 <?php get_header(); ?>
-	
-  <main class="container">
-    <div class="row">
-      <div class="col-12">
 
-          <?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
-          <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-            <h2><a href = "<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-            <p class="tesxt-muted"><?php the_author(); ?> il <?php the_time('jS F, Y'); ?></p> 							
-            <p><?php the_excerpt(''); ?></p> 	
-
-          <?php endwhile; wp_reset_query(); ?>
-          
-      </div>
-    </div>
+  <!-- Main - start -->
+  <main role="main" class="content homepage">
+    <?php
+      if(!is_user_logged_in()){
+        require_once( dirname(__file__).'/sections/login.php' );
+      }
+      else{
+        global $current_user;
+        wp_get_current_user();
+        ?>
+        <div class="container-fluid">
+          <div class="row cover-block" style="background-image:url('<?php echo get_site_url(); ?>/wp-content/themes/FAM-template/assets/images/fam_placeholder.jpg');"></div>
+        </div>
+        <div class="container content-box">
+          <div class="row">
+            <div class="col-12">
+              <!-- CONTENT -->
+            </div>
+          </div>
+        </div>
+        <?php
+      }
+    ?>
   </main>
+  <!-- Main - end -->
 
 <?php get_footer(); ?>
