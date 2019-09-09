@@ -16,7 +16,7 @@
           <div class="row align-items-center">
             <div class="col-4">
               <a href="<?php echo get_site_url(); ?>">
-                <img class="logo" src="<?php echo get_site_url().'/wp-content/themes/FAM-template/assets/images/logo.svg'; ?>">
+                <img class="logo" src="">
               </a>
             </div>
             <div class="col-8 text-right">
